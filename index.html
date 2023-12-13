@@ -14,7 +14,7 @@
                 color: #2B2D42;
                 overflow-x: hidden;
             }
-            body, button {
+            button {
                 font-family: 'Oswald', sans-serif;
             }
 
@@ -41,11 +41,11 @@
             }
 
             .catalog-slide {
-                width: 960px;
+                width: 1290px;
                 margin: auto;
                 display: grid;
-                grid-template-rows: repeat(4, 1fr);
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: repeat(4, 1fr);
                 row-gap: 30px;
                 column-gap: 30px;
                 margin-top: 50px;
@@ -362,7 +362,6 @@
         </style>
     </head>
     <body>
-        <span class="title">Products</span>
         <div id="root">
             <div id="filter-panel">
                 <span class="heading">Filters</span>
@@ -379,6 +378,7 @@
                 <button class="reset-button" onclick="reset()">Reset</button>
             </div>
             <div id="catalog-panel">
+                <span class="title">Products</span>
                 <div id="catalog-container">
                 </div>
                 <div id="pagination-panel">
