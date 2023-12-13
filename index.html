@@ -12,6 +12,7 @@
                 width: 100%;
                 background-color: #EDE7D9;
                 color: #2B2D42;
+                overflow-x: hidden;
             }
             body, button {
                 font-family: 'Oswald', sans-serif;
@@ -31,15 +32,17 @@
                 align-items: flex-start;
             }
 
-            .catalog-panel {
-                flex: 0 0 auto;
+            #catalog-panel {
+                flex: 0 1 auto;
             }
 
-            .catalog-panel, .catalog-container {
+            #catalog-panel, #catalog-container {
                 width: 100%;
             }
 
             .catalog-slide {
+                width: 960px;
+                margin: auto;
                 display: grid;
                 grid-template-rows: repeat(4, 1fr);
                 grid-template-columns: repeat(3, 1fr);
